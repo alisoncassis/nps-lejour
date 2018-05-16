@@ -13,7 +13,7 @@ export class ScoreComponent {
 
   emitScore(score: number): void {
     this.disabled = true;
-    // this.onVoted.emit(score);
+    this.onVoted.emit(score);
   }
 
 }

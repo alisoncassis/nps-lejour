@@ -7,10 +7,11 @@ import { HTTPService } from '../services/http';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent {
-  score = 0;
+  score = 7;
   id = '';
   comment = '';
   npsFinhed = false;
+  modalClosed = false;
 
   constructor(private httpService: HTTPService) { }
 

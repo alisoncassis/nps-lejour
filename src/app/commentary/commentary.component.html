@@ -1,7 +1,19 @@
-<div>
-    <div>Você nos deu nota {{score}}!</div>
-    <p>Dica? Reclamação? Só um obrigado?</p>
-    <p>Pode escrever aqui pra gente!</p>
-    <textarea [(ngModel)]="comment" required></textarea>
-    <button [disabled]="disabled" (click)="emitComment()">Enviar Comentário</button>
+<div class="comment-container">
+    <div class="comment-modal">
+        <div class="modal-header">
+            <h3 class="modal-title">Você nos deu nota {{score}}!</h3>
+            <img class="modal-image" [src]="getEmojiSrc()">
+        </div>
+        <div class="modal-content">
+            <div>
+                <p>Dica? Reclamação? Só um obrigado?</p>
+                <p>Pode escrever aqui pra gente!</p>
+            </div>
+            <div class="modal-input">
+                <textarea autoresize placeholder="Seu comentário" maxlength="140" [(ngModel)]="comment" required></textarea>
+                <span>{{comment.length}} de 140 caracteres</span>
+            </div>
+            <button [disabled]="disabled" (click)="emitComment()">ENVIAR COMENTÁRIO</button>
+        </div>
+    </div>
 </div>
