@@ -21,7 +21,7 @@ export class CommentaryComponent {
     if (this.score >= 9) {
       return 'https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Face_Emoji_large.png?v=1480481056';
     } else if (this.score >= 7 && this.score <= 8) {
-      return 'https://cdn.shopify.com/s/files/1/1061/1924/products/Very_sad_emoji_icon_png_large.png?v=1480481019';
+      return 'https://www.nrcc.org/wp-content/uploads/2015/05/straight-face.png';
     } else {
       return 'https://cdn.shopify.com/s/files/1/1061/1924/files/Crying_Face_Emoji.png?9898922749706957214';
     }
