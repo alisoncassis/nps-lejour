@@ -2,13 +2,10 @@
     <div class="score-content">
         <p>Qual a probabilidade de você recomendar o Lejour para outra pessoa?</p>
         <div class="score-inputs">
-            <div *ngFor="let key of [0,1,2,3,4,5,6,7,8,9,10]">
+            <div class="score-input" *ngFor="let key of [0,1,2,3,4,5,6,7,8,9,10]">
                 <input [disabled]="disabled" (click)="emitScore(key)" type="radio" name="score" [value]="key">
+                <i class="decoration"></i>
             </div>
-        </div>
-        <div class="score-legend">
-            <p style="text-align:left">Não recomendaria</p>
-            <p style="text-align:right">Recomendaria com certeza</p>
         </div>
     </div>
 </div>

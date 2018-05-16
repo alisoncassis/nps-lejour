@@ -1,5 +1,5 @@
 <div *ngIf="!modalClosed">
     <app-score *ngIf="!npsFinhed" (onVoted)="onVoted($event)"></app-score>
     <app-commentary *ngIf="id && !comment" [score]="score" (onComment)="onComment($event)"></app-commentary>
-    <app-modal *ngIf="npsFinhed" (onClose)="modalClosed = true"></app-modal>
+    <app-modal *ngIf="!npsFinhed" (onClose)="modalClosed = true"></app-modal>
 </div>

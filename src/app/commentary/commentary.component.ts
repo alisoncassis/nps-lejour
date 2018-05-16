@@ -14,7 +14,7 @@ export class CommentaryComponent {
 
   emitComment() {
     this.disabled = true;
-    // this.onComment.emit(this.comment);
+    this.onComment.emit(this.comment);
   }
 
   getEmojiSrc() {

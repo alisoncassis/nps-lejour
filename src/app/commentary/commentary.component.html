@@ -13,7 +13,7 @@
                 <textarea autoresize placeholder="Seu comentário" maxlength="140" [(ngModel)]="comment" required></textarea>
                 <span>{{comment.length}} de 140 caracteres</span>
             </div>
-            <button [disabled]="disabled" (click)="emitComment()">ENVIAR COMENTÁRIO</button>
+            <button [disabled]="disabled || (comment.length < 1 || comment.length > 140)" (click)="emitComment()">ENVIAR COMENTÁRIO</button>
         </div>
     </div>
 </div>
