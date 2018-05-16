@@ -1,0 +1,7 @@
+<div>
+    <div>Você nos deu nota {{score}}!</div>
+    <p>Dica? Reclamação? Só um obrigado?</p>
+    <p>Pode escrever aqui pra gente!</p>
+    <textarea [(ngModel)]="comment" required></textarea>
+    <button [disabled]="disabled" (click)="emitComment()">Enviar Comentário</button>
+</div>

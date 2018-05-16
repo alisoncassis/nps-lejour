@@ -1,0 +1,5 @@
+<div>
+    <app-score *ngIf="!npsFinhed" (onVoted)="onVoted($event)"></app-score>
+    <app-commentary *ngIf="id && !comment" [score]="score" (onComment)="onComment($event)"></app-commentary>
+    <app-modal *ngIf="npsFinhed"></app-modal>
+</div>
