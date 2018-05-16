@@ -11,12 +11,9 @@ const httpOptions = {
 export class HTTPService {
 
     private scoreUrl = 'https://staging-api.lejour.com.br/portal/api/v2/nps/';
-
     constructor(private http: HttpClient) { }
-
+    
     post(body: object, operation: string): Observable<any> {
-        console.log('body sendo enviado');
-        console.log(body);
         return this.http.post<any>(this.scoreUrl, body, httpOptions).pipe(
             tap(response => response),
             catchError(this.handleError<any>(operation))
@@ -38,4 +35,3 @@ export class HTTPService {
     }
 
 }
-

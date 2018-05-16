@@ -1,0 +1,27 @@
+.score {
+  &-container {
+    width: 100%;
+    background: #e6f7f5;
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    .score {
+      &-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20%;
+      }
+      &-inputs {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 20%;
+      }
+      &-legend {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15%;
+      }
+    }
+  }
+}

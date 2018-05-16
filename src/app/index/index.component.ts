@@ -4,10 +4,10 @@ import { HTTPService } from '../services/http';
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['./index.component.scss']
 })
 export class IndexComponent {
-  score = 7;
+  score = 0;
   id = '';
   comment = '';
   npsFinhed = false;
